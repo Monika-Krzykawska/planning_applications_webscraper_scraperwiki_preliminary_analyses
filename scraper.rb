@@ -47,14 +47,14 @@ require 'net/http'
 # 4. HEADINGS OF THE TABLE SHOWING DATA ON THE INDIVIDUAL APPEAL
 
 # FIRSTLY, IN ORDER TO SEARCH THE FORM SPECIFY YOUR VARIBLES HERE:
-url = 'http://www.publicaccess.bedford.gov.uk/online-applications/search.do?action=advanced' #link to the advanced search page on the local authority website
-url_beginning = "http://www.publicaccess.bedford.gov.uk" #the first bit of the url (ending with "gov.uk")http://planning.stockport.gov.uk/PlanningData-live/search.do?action=advanced&searchType=Appeal
-url_appeal = 'http://www.publicaccess.bedford.gov.uk/online-applications/search.do?action=advanced&searchType=Appeal' #link to appeals search
-council = "Bedford" #specify the council name
+url = 'https://publicaccess.westoxon.gov.uk/online-applications/search.do?action=advanced' #link to the advanced search page on the local authority website
+url_beginning = "https://publicaccess.westoxon.gov.uk" #the first bit of the url (ending with "gov.uk")http://planning.stockport.gov.uk/PlanningData-live/search.do?action=advanced&searchType=Appeal
+url_appeal = 'https://publicaccess.westoxon.gov.uk/online-applications/search.do?action=advanced&searchType=Appeal' #link to appeals search
+council = "West_Oxfordshire" #specify the council name
 startDate = "01/03/2017" #specify decision date start
-endDate = "05/03/2017" #specify decision date end
-startAppealDate = "01/01/2017" #specify appeal start date
-endAppealDate = "31/03/2017" #specify appeal end date
+endDate = "03/03/2017" #specify decision date end
+startAppealDate = "01/03/2017" #specify appeal start date
+endAppealDate = "15/03/2017" #specify appeal end date
 
 # this is to instantiate a new mechanize object
 agent = Mechanize.new
